@@ -1,0 +1,828 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>CODE VEDA 3.0 - #Bleed the code </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FREEHTML5.CO" />
+
+  <!-- 
+	//////////////////////////////////////////////////////
+
+	FREE HTML5 TEMPLATE 
+	DESIGNED & DEVELOPED by FREEHTML5.CO
+		
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
+
+	//////////////////////////////////////////////////////
+	 -->
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png">
+
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Simple Line Icons -->
+	<link rel="stylesheet" href="css/simple-line-icons.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- 
+	Default Theme Style 
+	You can change the style.css (default color purple) to one of these styles
+	
+	1. pink.css
+	2. blue.css
+	3. turquoise.css
+	4. orange.css
+	5. lightblue.css
+	6. brown.css
+	7. green.css
+
+	-->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Styleswitcher ( This style is for demo purposes only, you may delete this anytime. ) -->
+	<link rel="stylesheet" id="theme-switch" href="css/style.css">
+	<!-- End demo purposes only -->
+
+
+	<style>/* For demo purpose only */
+	
+	/* For Demo Purposes Only ( You can delete this anytime :-) */
+	#colour-variations {
+		padding: 10px;
+		-webkit-transition: 0.5s;
+	  	-o-transition: 0.5s;
+	  	transition: 0.5s;
+		width: 140px;
+		position: fixed;
+		left: 0;
+		top: 100px;
+		z-index: 999999;
+		background: #fff;
+		/*border-radius: 4px;*/
+		border-top-right-radius: 4px;
+		border-bottom-right-radius: 4px;
+		-webkit-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		-moz-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		-ms-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+	}
+	#colour-variations.sleep {
+		margin-left: -140px;
+	}
+	#colour-variations h3 {
+		text-align: center;;
+		font-size: 11px;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		color: #777;
+		margin: 0 0 10px 0;
+		padding: 0;;
+	}
+	#colour-variations ul,
+	#colour-variations ul li {
+		padding: 0;
+		margin: 0;
+	}
+	#colour-variations li {
+		list-style: none;
+		display: block;
+		margin-bottom: 5px!important;
+		float: left;
+		width: 100%;
+	}
+	#colour-variations li a {
+		width: 100%;
+		position: relative;
+		display: block;
+		overflow: hidden;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		-ms-border-radius: 4px;
+		border-radius: 4px;
+		-webkit-transition: 0.4s;
+		-o-transition: 0.4s;
+		transition: 0.4s;
+	}
+	#colour-variations li a:hover {
+	  	opacity: .9;
+	}
+	#colour-variations li a > span {
+		width: 33.33%;
+		height: 20px;
+		float: left;
+		display: -moz-inline-stack;
+		display: inline-block;
+		zoom: 1;
+		*display: inline;
+	}
+	
+
+	.option-toggle {
+		position: absolute;
+		right: 0;
+		top: 0;
+		margin-top: 5px;
+		margin-right: -30px;
+		width: 30px;
+		height: 30px;
+		background: #f64662;
+		text-align: center;
+		border-top-right-radius: 4px;
+		border-bottom-right-radius: 4px;
+		color: #fff;
+		cursor: pointer;
+		-webkit-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		-moz-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		-ms-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+	}
+	.option-toggle i {
+		top: 2px;
+		position: relative;
+	}
+	.option-toggle:hover, .option-toggle:focus, .option-toggle:active {
+		color:  #fff;
+		text-decoration: none;
+		outline: none;
+	}
+
+	.timer {
+	  display: inline-block;
+	  font-size: 1.5em;
+	  list-style-type: none;
+	  padding: 1em;
+	  text-transform: uppercase;
+	}
+
+	.timer span {
+	  display: block;
+	  font-size: 4.5rem;
+	}
+
+	</style>
+	<!-- End demo purposes only -->
+
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="js/timer.js"></script>
+	
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+	<header role="banner" id="fh5co-header">
+
+			<div class="container">
+				<!-- <div class="row"> -->
+			    <nav class="navbar navbar-default">
+		        <div class="navbar-header">
+		        	<!-- Mobile Toggle Menu Button -->
+					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+		         <a class="navbar-brand" href="index.html">CODEVEDA</a>
+		         </div>
+		        <div id="navbar" class="navbar-collapse collapse">
+		          <ul class="nav navbar-nav navbar-right">
+		            <li class="active"><a href="#" data-nav-section="home"><span>Home</span></a></li>
+		            <li><a href="#" data-nav-section="about"><span>About</span></a></li>
+		            <li><a href="#" data-nav-section="services"><span>Events</span></a></li>
+		            <li><a href="#" data-nav-section="registration"><span>Registration</span></a></li>
+		            <li><a href="#" data-nav-section="testimonials"><span>Testimonials</span></a></li> 
+		            <li><a href="#" data-nav-section="work"><span>Gallery</span></a></li>
+		            <li><a href="#" data-nav-section="contact"><span>Contact</span></a></li>
+		          </ul>
+		        </div>
+			    </nav>
+			  </div>
+		  </div>
+	</header>
+
+	<section id="fh5co-home" data-section="home"  data-stellar-background-ratio="0.5">
+
+		
+		<section class="canvas-wrap">
+            <div class="canvas-content">
+            </div>
+            <div id="canvas"></div>
+            
+        </section>
+        <div class="gradient"></div>
+
+		
+		<div class="container">
+			<div class="text-wrap">
+				<div class="text-inner">
+					<div class="row">
+							<img src="images/logo.png" class="to-animate col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6 col-xs-offset-3 col-xs-6"/>
+					</div>		
+					<h2 class="to-animate">#Bleed the CODE</h2>
+					<div class="row">			
+						<div class="col-md-offset-2 col-md-8 col-sm-offset-3 col-sm-6 col-xs-offset-0 col-xs-12"><br/>
+							    <ul >
+							    <li class="timer"><span class="to-animate" id="days"></span><div class="to-animate">days</div></li>
+							    <li class="timer" ><span class="to-animate" id="hours"></span><div class="to-animate">Hours</div></li>
+							    <li class="timer"><span class="to-animate" id="minutes"></span><div class="to-animate">Minutes</div></li>
+							    <li class="timer"><span  class="to-animate" id="seconds"></span><div class="to-animate">Seconds</div></li>
+							  </ul>
+							  <h2 class="to-animate">DAYS TO GO....</h2>
+							<!-- <h2 class="to-animate">Another free HTML5 bootstrap template by <a href="http://freehtml5.co/" target="_blank" title="Free HTML5 Bootstrap Templates">FREEHTML5.co</a> released under <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">Creative Commons 3.0</a></h2> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="slant"></div>
+	</section>
+	<section id="fh5co-about" data-section="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="to-animate">About</h2>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 subtext to-animate">
+							<h3><b>Code Veda <sup>3.0</sup></b>, the signature event of department of Computer Science and Engineering of Mangalam College of Engineering is an annual technical fiesta. This is the best platform to present your talents in technical domain at its best. It consists of a melange of competitive events, Workshops on latest technologies and entertainment oriented events, there by catering to a multitude of students from various domains.</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--
+			<div class="row">
+				<div class="col-md-4">
+					<div class="fh5co-person text-center to-animate">
+						<figure><img src="images/person1.jpg" alt="Image"></figure>
+						<h3>Jean Smith</h3>
+						<span class="fh5co-position">Web Designer</span>
+						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>
+						<ul class="social social-circle">
+							<li><a href="#"><i class="icon-twitter"></i></a></li>
+							<li><a href="#"><i class="icon-facebook"></i></a></li>
+							<li><a href="#"><i class="icon-dribbble"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="fh5co-person text-center to-animate">
+						<figure><img src="images/person2.jpg" alt="Image"></figure>
+						<h3>Rob Smith</h3>
+						<span class="fh5co-position">Web Developer</span>
+						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>
+						<ul class="social social-circle">
+							<li><a href="#"><i class="icon-twitter"></i></a></li>
+							<li><a href="#"><i class="icon-facebook"></i></a></li>
+							<li><a href="#"><i class="icon-github"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="fh5co-person text-center to-animate">
+						<figure><img src="images/person3.jpg" alt="Image"></figure>
+						<h3>Larry Ben</h3>
+						<span class="fh5co-position">Web Designer</span>
+						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>
+						<ul class="social social-circle">
+							<li><a href="#"><i class="icon-twitter"></i></a></li>
+							<li><a href="#"><i class="icon-facebook"></i></a></li>
+							<li><a href="#"><i class="icon-dribbble"></i></a></li>
+						</ul>
+					</div>
+				</div>
+
+			-->
+			</div>
+		</div>
+	</section>
+
+
+
+<section id="fh5co-services" data-section="services">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 section-heading text-left">
+					<h2 class=" left-border to-animate">Events</h2>
+					<div class="row">
+						<div class="col-md-8 subtext to-animate">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-sm-6 fh5co-service to-animate">
+					<i class="icon to-animate-2 icon-gamepad"></i>
+					<h3>Cyber Warfare</h3>
+					<p>Have you lost your life??? Wanna have extra lives??? But no bargaining, no trespassing. It’s the time to start  the game. The games of fleet of big ships with NFS,FIFA, CALL oF DUTY and so on.Get your hands ready.<br><b>PRIZE : 3K</b><br>Date : 16/02/2018
+					</p>
+					
+				</div>
+
+				<div class="col-md-6 col-sm-6 fh5co-service to-animate">
+					<i class="icon to-animate-2 icon-bug"></i>
+					<h3>BugSmash</h3>
+					<p>Are you amazed of codes? Do you like the fashion oh how big machines work? Then this is your area? Catch the bugs from programming palette. “How fast you are” is the key for you success door.<br><b>PRIZE : 5K</b><br>Date : 16/02/2018</p>
+					
+				</div>
+
+				<div class="clearfix visible-sm-block"></div>
+
+				<div class="col-md-6 col-sm-6 fh5co-service to-animate">
+					<i class="icon to-animate-2 icon-question"></i>
+					<h3>Brain Busters</h3>
+					<p>Technical quiz : Have you ever had a scrap book of piece of information?? Then this belongs to you. Get the question,analyse, answer…. Yes you are in. 
+						<br>Your time starts now.<br><b>PRIZE : 5K</b><br>Date : 16/02/2018</p>
+					
+				</div>
+				<div class="col-md-6 col-sm-6 fh5co-service to-animate">
+					<i class="icon to-animate-2 icon-google"></i>
+					<h3>Googler</h3>
+					<p>Are you pretending that you are a google master? Do you like searching over a particular topic? Lets check it out… get the picture challenge from google, search and search until you get the golden ticket.<br><b>PRIZE : 4K</b><br>Date : 17/02/2018</p>
+				
+				</div>
+
+				<div class="clearfix visible-sm-block"></div>
+
+				<div class="col-md-6 col-sm-6 fh5co-service to-animate">
+					<i class="icon to-animate-2 icon-map-o"></i>
+					<h3>Tresure Hunt</h3>
+					<p>A game in which a team attempts to be first in finding something that has been hidden, using written directions or clues. It is as exciting to play as it sounds. So, join with us for the unearthing of the treasure chest.<br><b>PRIZE : 8K</b><br>Date : 17/02/2018</p>
+					
+
+
+				</div>
+				<div class="col-md-6 col-sm-6 fh5co-service to-animate">
+					<i class="icon to-animate-2 icon-bulb"></i>
+					<h3>Project Contest</h3>
+					<p>This is your opportunity to show the world the work that has been keeping you up at night. So, if you are tirelessly tinkering with a tech project that solves complex problems or has applications to benefit society, We want to hear from you.<br><b>PRIZE : 5K</b><br>Date : 16/02/2018<br><b>Send your abstract to : project.codeveda@gmail.com</b></p>
+					
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 section-heading text-left">
+					<h2 class=" left-border to-animate">Workshops</h2>
+					<div class="row">
+						<div class="col-md-8 subtext to-animate">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-sm-6 fh5co-service to-animate">
+					<i class="icon to-animate-2 icon-paper-plane-o"></i>
+					<h3>How to build a Drone ?</h3>
+					<p>Dive in to the world of drones and understand how it's made, programmed and flied. The session covers topics on: <br><b>i. Introduction to Drones<br>ii. How to choose drone components<br>iii. Build and fly a quadcopter (assembly + wiring + software)<br>iv. Future of Drones<br><br>Conducted by : Binu K Jose, CEO (Grapes Innotech)<br>Registration fee : 100 Rs<br>Date : 16/02/2018</b></p>
+					
+				</div>
+
+				<div class="col-md-6 col-sm-6 fh5co-service to-animate">
+					<i class="icon to-animate-2 icon-eye"></i>
+					<h3>Introduction to AR, VR and Unity3D</h3>
+					<p>Get your self immersed in the world of Augmented and Virtual Reality and learn how a 3D game is build using UNITY 3D platform.The session covers topics on<br><b>i. Introduction to Augmented Reality<br>ii. Introduction to Virtual Reality<br>iii. Game development using UNITY 3D<br><br>Conducted by : Toonz Academy (UNITY Experts)<br>Registration fee : 100 Rs<br>Date : 17/02/2018</b></p>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+<section id="fh5co-about" data-section="registration">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 section-heading text-center">
+					<h2>REGISTRATION</h2>
+					<P>The time for action is NOW! . It's never too late to register</P>
+					<p><a href="register.php.html" class="btn btn-primary" style="width:50%; height:60px; font-size:30px;">REGISTER NOW</a></p>
+				</div>
+			</div>
+</div>
+</section>
+
+
+
+
+
+
+
+	<section id="fh5co-testimonials" data-section="testimonials">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="to-animate">Testimonials</h2>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 subtext to-animate">
+							<h3>									</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<!--
+				<div class="col-md-6">
+					<div class="box-testimony">
+						<blockquote class="to-animate-2">
+							<p>&ldquo;&rdquo;</p>
+						</blockquote>
+						<div class="author to-animate">
+							<figure><img src="images/person1.jpg" alt="Person"></figure>
+							<p>
+							Dr M M Paulose, Principal<span class="subtext">Mangalam College of Engineering</span>
+							</p>
+						</div>
+					</div>
+				</div>
+				-->
+				<div class="col-md-6">
+					<div class="box-testimony">
+						<blockquote class="to-animate-2">
+							<p>&ldquo;I am really proud to  see that my students are doing a great job.  Code Veda 3.0 is a prestigious technical event where the organizing skill and technical capabilities of  this department students are really tested. I feel this year the speciality of the event is  the  variety of workshops planned. As every year I hope this year also our fest will be a grand success in terms of participation and fruitful technical discussions happening.&rdquo;</p>
+						</blockquote>
+						<div class="author to-animate">
+							<figure><img src="images/person2.jpg" alt="Person"></figure>
+							<p>
+							Vinod P Vijayan, H.O.D<span class="subtext">Deptartment of CSE</span>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				
+				
+				
+			</div>
+		</div>
+	</section>
+
+
+	
+
+	<section id="fh5co-work" data-section="work">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="to-animate">GALLERY</h2>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 subtext to-animate">
+							<h3>Check out our posters and images</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row row-bottom-padded-sm">
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="images/debugging.png" class="fh5co-project-item image-popup to-animate">
+						<img src="images/debugging.png" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>Debugging</h2>
+						<span>Coding Challenge</span>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="images/gaming.png" class="fh5co-project-item image-popup to-animate">
+						<img src="images/gaming.png" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>Cyber Warfare</h2>
+						<span>Network Gaming</span>
+						</div>
+					</a>
+				</div>
+
+				<div class="clearfix visible-sm-block"></div>
+
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="images/quiz.png" class="fh5co-project-item image-popup to-animate">
+						<img src="images/quiz.png" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>Brain Busters</h2>
+						<span>Technical Quiz</span>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="images/project.png" class="fh5co-project-item image-popup to-animate">
+						<img src="images/project.png" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>Project Contest</h2>
+						<span>Technical Project Contest</span>
+						</div>
+					</a>
+				</div>
+				
+				<div class="clearfix visible-sm-block"></div>
+
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="images/treasurehunt.png" class="fh5co-project-item image-popup to-animate">
+						<img src="images/treasurehunt.png" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>Tresure Hunt</h2>
+						<span>Find the hidden bonanza!</span>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="images/googler.png" class="fh5co-project-item image-popup to-animate">
+						<img src="images/googler.png" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>Googler</h2>
+						<span>Google it until you find it.</span>
+						</div>
+					</a>
+				</div>
+				<!--
+				<div class="clearfix visible-sm-block"></div>
+
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="images/work_7.jpg" class="fh5co-project-item image-popup to-animate">
+						<img src="images/work_7.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>Project 3</h2>
+						<span>Web</span>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="images/work_8.jpg" class="fh5co-project-item image-popup to-animate">
+						<img src="images/work_8.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>Project 4</h2>
+						<span>Sketch</span>
+						</div>
+					</a>
+				</div>
+
+				<div class="clearfix visible-sm-block"></div>
+
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="images/work_1.jpg" class="fh5co-project-item image-popup to-animate">
+						<img src="images/work_1.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>Project 2</h2>
+						<span>Illustration</span>
+						</div>
+					</a>
+				</div>
+			-->
+
+
+			</div>
+		</div>
+	</section>
+
+	
+	
+	
+<!--STATISTICS	
+	<section id="fh5co-counters" style="background-image: url(images/full_image_1.jpg);" data-stellar-background-ratio="0.5">
+		<div class="fh5co-overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 section-heading text-center to-animate">
+					<h2>Fun Facts</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="fh5co-counter to-animate">
+						<i class="fh5co-counter-icon icon-briefcase to-animate-2"></i>
+						<span class="fh5co-counter-number js-counter" data-from="0" data-to="89" data-speed="5000" data-refresh-interval="50">89</span>
+						<span class="fh5co-counter-label">Finished projects</span>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="fh5co-counter to-animate">
+						<i class="fh5co-counter-icon icon-code to-animate-2"></i>
+						<span class="fh5co-counter-number js-counter" data-from="0" data-to="2343409" data-speed="5000" data-refresh-interval="50">2343409</span>
+						<span class="fh5co-counter-label">Line of codes</span>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="fh5co-counter to-animate">
+						<i class="fh5co-counter-icon icon-cup to-animate-2"></i>
+						<span class="fh5co-counter-number js-counter" data-from="0" data-to="1302" data-speed="5000" data-refresh-interval="50">1302</span>
+						<span class="fh5co-counter-label">Cup of coffees</span>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="fh5co-counter to-animate">
+						<i class="fh5co-counter-icon icon-people to-animate-2"></i>
+						<span class="fh5co-counter-number js-counter" data-from="0" data-to="52" data-speed="5000" data-refresh-interval="50">52</span>
+						<span class="fh5co-counter-label">Happy clients</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+-->
+
+
+	<section id="fh5co-contact" data-section="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="to-animate">Get In Touch</h2>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 subtext to-animate">
+							<h3>We are happy to hear from you about any queries</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row row-bottom-padded-md">
+				<div class="col-md-6 to-animate">
+					<h3>Contact Info</h3>
+					<ul class="fh5co-contact-info">
+						<li class="fh5co-contact-address ">
+							<i class="icon-home"></i>
+							 College Road, Mangalam Hills, Vettimukal, <br>Ettumanoor, Kottayam
+						</li>
+						<li><i class="icon-phone"></i>+91 9400038628</li>
+						<li><i class="icon-envelope"></i>support@codeveda2018.com</li>
+						<li><i class="icon-globe"></i> <a href="index.html" target="_blank">codeveda2018.com</a></li>
+					</ul>
+				</div>
+
+				<div class="col-md-6 to-animate">
+					<h3>Contact Form</h3>
+					<div class="form-group ">
+						<label for="name" class="sr-only">Name</label>
+						<input id="name" class="form-control" placeholder="Name" type="text">
+					</div>
+					<div class="form-group ">
+						<label for="email" class="sr-only">Email</label>
+						<input id="email" class="form-control" placeholder="Email" type="email">
+					</div>
+					<div class="form-group ">
+						<label for="phone" class="sr-only">Phone</label>
+						<input id="phone" class="form-control" placeholder="Phone" type="text">
+					</div>
+					<div class="form-group ">
+						<label for="message" class="sr-only">Message</label>
+						<textarea name="" id="message" cols="30" rows="5" class="form-control" placeholder="Message"></textarea>
+					</div>
+					<div class="form-group ">
+						<input class="btn btn-primary btn-lg" value="Send Message" type="submit">
+					</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div id="map" class="to-animate"></div>
+	</section>
+	
+	
+	<footer id="footer" role="contentinfo">
+		<a href="#" class="gotop js-gotop"><i class="icon-arrow-up2"></i></a>
+		<div class="container">
+			<div class="">
+				<div class="col-md-12 text-center">
+					<p>&copy; Designed by Ananthakrishnan J</p>
+					
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<ul class="social social-circle">
+						<li><a href="https://twitter.com/codeveda" target="_blank"><i class="icon-twitter"></i></a></li>
+						<li><a href="https://www.facebook.com/Codeveda18/" target="_blank"><i class="icon-facebook"></i></a></li>
+						<li><a href="https://www.youtube.com/channel/UCWbL5sQE51ifR-g_Nuy-0_g" target="_blank"><i class="icon-youtube"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	
+	<!-- For demo purposes Only ( You may delete this anytime :-) 
+	<div id="colour-variations">
+		<a class="option-toggle"><i class="icon-gear"></i></a>
+		<h3>Preset Colors</h3>
+		<ul>
+			<li>
+				<a href="javascript: void(0);" data-theme="style">
+					<span style="background: #3f95ea;"></span>
+					<span style="background: #52d3aa;"></span>
+					<span style="background: #f2f2f2;"></span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript: void(0);" data-theme="style2">
+					<span style="background: #329998;"></span>
+					<span style="background: #6cc99c;"></span>
+					<span style="background: #f2f2f2;"></span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript: void(0);" data-theme="style3">
+					<span style="background: #9f466e;"></span>
+					<span style="background: #c24d67;"></span>
+					<span style="background: #f2f2f2;"></span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript: void(0);" data-theme="style4">
+					<span style="background: #21825C;"></span>
+					<span style="background: #A4D792;"></span>
+					<span style="background: #f2f2f2;"></span>
+				</a>
+			</li>
+			
+		</ul>
+	</div>
+	 End demo purposes only -->
+
+	<!-- HOME BACKGROUND -->	 
+	  	<!-- Main library -->
+        <script src="js/three.min.js"></script>
+     
+        <!-- Helpers -->
+        <script src="js/projector.js"></script>
+        <script src="js/canvas-renderer.js"></script>
+        <!-- Visualitzation adjustments -->
+        <script src="js/3d-lines-animation.js"></script>
+        <!-- Animated background color -->
+         
+       
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Stellar Parallax -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Counter -->
+	<script src="js/jquery.countTo.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	<!-- Google Map -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&amp;sensor=false"></script>
+	<script src="js/google_map.js"></script>
+
+	<!-- For demo purposes only styleswitcher ( You may delete this anytime ) -->
+	<script src="js/jquery.style.switcher.js"></script>
+	<script>
+		$(function(){
+			$('#colour-variations ul').styleSwitcher({
+				defaultThemeId: 'theme-switch',
+				hasPreview: false,
+				cookie: {
+		          	expires: 30,
+		          	isManagingLoad: true
+		      	}
+			});	
+			$('.option-toggle').click(function() {
+				$('#colour-variations').toggleClass('sleep');
+			});
+		});
+	</script>
+	<!-- End demo purposes only -->
+
+	<!-- Main JS (Do not remove) -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
+
